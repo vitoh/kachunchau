@@ -1,3 +1,16 @@
 .browser {
-    
+    background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%) 40px);
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 10px 40px rgba(#000, .2);
+    padding-top: 24px;
+}
+
+.browser-viewport {
+    border-top: 1px solid rgba(#000, .1);
+    height: 400px;
+    overflow-y: scroll;
+
+    @include respond-to(small) {
+        height: 500px;
+    }
 }

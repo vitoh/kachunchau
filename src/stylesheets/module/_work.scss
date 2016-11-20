@@ -24,28 +24,9 @@ article {
 }
 
 .work-img {
-    box-shadow: 0 10px 40px rgba(#000, .2);
-    height: 400px;
     margin-bottom: (28px / 2);
-    overflow: hidden;
-    padding-top: 22px;
-    position: relative;
-    transition: box-shadow .25s ease-in;
-    &:after {
-        background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%));
-        border-bottom: 1px solid darken(#ccc, 9%);
-        border-radius: 6px 6px 0 0;
-        content: "";
-        display: block;
-        height: 22px;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-    }
 
     @include respond-to(small) {
-        height: 500px;
         margin-top: (32px * 2);
         margin-bottom: 0;
     }
