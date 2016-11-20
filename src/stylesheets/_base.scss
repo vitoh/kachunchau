@@ -1,0 +1,110 @@
+@import
+    "normalize";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.giga {
+    color: #222;
+    font-family: $serif;
+    font-size: 54px;
+    letter-spacing: -.01em;
+    line-height: 1.2;
+    margin-bottom: .4em;
+
+    @include respond-to(small) {
+        // font-size: 70px;
+        // font-size: 82px;
+        font-size: 130px;
+        // margin-bottom: .2em;
+    }
+}
+
+h1,
+.alpha {
+    font-size: 24px;
+    line-height: 1.45;
+
+    @include respond-to(small) {
+        font-size: 31px;
+    }
+}
+
+h2,
+.beta {
+    font-size: 18px;
+
+    @include respond-to(small) {
+        font-size: 20px;
+    }
+}
+
+h3,
+.gamma {
+    font-size: 14px;
+}
+
+p {
+    margin-top: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+html {
+    background-color: #fff;
+    box-sizing: border-box;
+    color: darken(#666, 5%);
+    // font-family: $serif;
+    font-family: $sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+
+    @include respond-to(small) {
+        font-size: 20px;
+    }
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    transition-property: all;
+    transition-duration: .25s;
+    transition-timing-funtion: ease;
+    &:hover {
+        text-decoration: none;
+    }
+}

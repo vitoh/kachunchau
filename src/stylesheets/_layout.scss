@@ -1,0 +1,59 @@
+.l-stacked,
+.l-inline,
+.l-grid {
+    @extend %nobullets;
+
+    margin-bottom: 0;
+}
+
+.l-inline {
+    > li {
+        display: inline-block;
+    }
+}
+
+.l-grid {
+    @extend %clearfix;
+
+    margin-bottom: 0;
+
+    > li {
+        float: left;
+    }
+}
+
+.l-header {
+    position: absolute;
+    top: 28px;
+    right: (18px * 2);
+    left: (18px * 2);
+
+    @include respond-to(small) {
+        top: 32px;
+    }
+
+    a {
+        text-align: left;
+    }
+
+    .social {
+        text-align: right;
+    }
+}
+
+.l-constrained,
+.l-constrained-tight {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.l-constrained {
+    max-width: 1140px;
+    padding-left: (20px * 2);
+    padding-right: (20px * 2);
+    position: relative;
+}
+
+.l-constrained-tight {
+    max-width: 760px;
+}

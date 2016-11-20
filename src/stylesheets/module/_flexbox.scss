@@ -1,0 +1,27 @@
+.flexbox {
+    display: flex;
+}
+
+.flexbox--top {
+    align-items: flex-start;
+}
+
+.flexbox--bottom {
+    align-items: flex-end;
+}
+
+.flexbox--center {
+    align-items: center;
+}
+
+.flexbox-cell--top {
+    align-self: flex-start;
+}
+
+.flexbox-cell--bottom {
+    align-self: flex-end;
+}
+
+.flexbox-cell--center {
+    align-self: center;
+}

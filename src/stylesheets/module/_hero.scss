@@ -1,0 +1,28 @@
+.hero {
+    text-align: center;
+
+    a {
+        color: #222;
+    }
+}
+
+.hero-unit {
+    padding-top: 28px * 5;
+    padding-bottom: 28px * 3;
+
+    @include respond-to(small) {
+        // margin-right: auto;
+        // margin-left: auto;
+        padding-top: 32px * 5;
+        padding-bottom: 32px * 4;
+        // max-width: 760px;
+    }
+}
+
+.hero-tagline  {
+    padding-bottom: 28px;
+
+    @include respond-to(small) {
+        padding-bottom: 32px;
+    }
+}

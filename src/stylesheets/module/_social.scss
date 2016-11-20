@@ -1,0 +1,15 @@
+.social {
+    margin-bottom: 0;
+    margin-left: auto;
+    line-height: 0;
+
+    > li {
+        &:not(:last-child) {
+            margin-right: 9px;
+
+            @include respond-to(small) {
+                margin-right: 14px;
+            }
+        }
+    }
+}

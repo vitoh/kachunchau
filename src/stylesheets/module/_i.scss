@@ -1,0 +1,38 @@
+.i {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    display: inline-block;
+    height: 24px;
+    line-height: 0;
+    width: 24px;
+
+    @include respond-to(small) {
+        background-size: 28px;
+        height: 28px;
+        width: 28px;
+    }
+}
+
+
+.i--twitter {
+    background-image: url(../images/twitter.svg);
+    &:hover {
+    }
+}
+
+.i--github {
+    background-image: url(../images/github.svg);
+}
+
+.i--spotify {
+    background-image: url(../images/spotify.svg);
+}
+
+.i--dribbble {
+    background-image: url(../images/dribbble.svg);
+}
+
+.i--instagram {
+    background-image: url(../images/instagram.svg);
+}

@@ -1,0 +1,34 @@
+.island {
+    padding-top: 32px * 3;
+    padding-bottom: 32px * 3;
+    transition: background .25s ease-out;
+
+    @include respond-to(small) {
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+}
+
+.island--a {
+    background-color: darken(#00aba2, 0%);
+    color: #fff;
+    &:hover {
+        // background-color: darken(#00aba2, 10%);
+    }
+}
+
+
+.island--b {
+    background-color: darken(#b2c5bc, 0%);
+    color: #fff;
+    &:hover {
+        // background-color: darken(#b2c5bc, 20%);
+    }
+}
+
+
+.island--c {
+    background-color: lighten(#bed22f, 0%);
+    color: #fff;
+}
