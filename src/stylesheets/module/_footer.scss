@@ -11,5 +11,9 @@
 
     .small {
         display: inline-block;
+
+        + .small {
+            margin-left: 20px;
+        }
     }
 }

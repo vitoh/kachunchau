@@ -64,13 +64,17 @@ p {
     }
 }
 
+html,
+body {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+}
+
 html {
     background-color: #fff;
     box-sizing: border-box;
     color: darken(#666, 5%);
     // font-family: $serif;
     font-family: $sans-serif;
-    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
     font-kerning: normal;
     font-size: 18px;
     line-height: 1.6;
@@ -79,9 +83,6 @@ html {
     @include respond-to(small) {
         font-size: 20px;
     }
-}
-
-body {
 }
 
 ::-moz-selection {
