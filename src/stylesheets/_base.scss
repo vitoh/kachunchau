@@ -15,13 +15,13 @@ h6 {
     color: #222;
     font-family: $serif;
     font-size: 54px;
-    letter-spacing: -.01em;
     line-height: 1.2;
     margin-bottom: .4em;
 
     @include respond-to(small) {
         font-size: 83px;
         // font-size: 130px;
+        letter-spacing: -.02em;
         margin-bottom: .3em;
     }
 }
@@ -70,6 +70,8 @@ html {
     color: darken(#666, 5%);
     // font-family: $serif;
     font-family: $sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+    font-kerning: normal;
     font-size: 18px;
     line-height: 1.6;
     text-rendering: optimizeLegibility;
@@ -77,6 +79,9 @@ html {
     @include respond-to(small) {
         font-size: 20px;
     }
+}
+
+body {
 }
 
 ::-moz-selection {

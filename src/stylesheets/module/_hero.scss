@@ -7,11 +7,11 @@
 }
 
 .hero-unit {
-    padding-top: 28px * 4;
+    padding-top: 28px * 5;
     padding-bottom: 28px * 3;
 
     @include respond-to(small) {
-        padding-top: 32px * 6;
+        padding-top: 32px * 6.5;
         padding-bottom: 32px * 4;
     }
 }
