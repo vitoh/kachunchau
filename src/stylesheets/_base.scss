@@ -7,7 +7,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 0;
 }
 
@@ -20,10 +20,9 @@ h6 {
     margin-bottom: .4em;
 
     @include respond-to(small) {
-        // font-size: 70px;
         font-size: 83px;
         // font-size: 130px;
-        // margin-bottom: .2em;
+        margin-bottom: .3em;
     }
 }
 
@@ -33,7 +32,7 @@ h1,
     line-height: 1.45;
 
     @include respond-to(small) {
-        font-size: 31px;
+        font-size: 32px;
     }
 }
 
