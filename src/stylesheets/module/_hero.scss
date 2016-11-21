@@ -11,7 +11,7 @@
     padding-bottom: 28px * 3;
 
     @include respond-to(small) {
-        padding-top: 32px * 6.5;
+        padding-top: 32px * 6;
         padding-bottom: 32px * 4;
     }
 }
