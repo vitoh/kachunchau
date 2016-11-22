@@ -1,3 +1,8 @@
+article {
+    padding-top: (30px * 2);
+    padding-bottom: (30px * 2);
+}
+
 .work,
 article {
     flex-direction: column;
@@ -12,13 +17,13 @@ article {
 
     @include respond-to(small) {
         order: 2;
-        width: 65%;
+        width: 60%;
     }
 
     + .work-block {
         @include respond-to(small) {
             order: 1;
-            width: 35%;
+            width: 40%;
         }
     }
 }
@@ -27,15 +32,14 @@ article {
     margin-bottom: (28px / 2);
 
     @include respond-to(small) {
-        margin-top: (32px * 2);
         margin-bottom: 0;
     }
 }
 
 .work-meta {
     @include respond-to(small) {
-        margin-right: (32px * 1);
-        // margin-left: (32px * 1);
+        margin-right: (30px * 1.5);
+        // margin-left: (30px * 1.5);
     }
 }
 

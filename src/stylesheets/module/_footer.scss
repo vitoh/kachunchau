@@ -1,9 +1,14 @@
 .footer {
     background-color: #222;
     color: #fff;
-    padding-top: 32px * 2;
-    padding-bottom: 32px * 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
+
+    @include respond-to(small) {
+        padding-top: (30px * 2);
+        padding-bottom: (30px * 2);
+    }
 
     .alpha {
         margin-bottom: 0;

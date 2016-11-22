@@ -25,11 +25,13 @@
 .l-header {
     position: absolute;
     top: 28px;
-    right: (20px * 2);
-    left: (20px * 2);
+    right: (30px * 1);
+    left: (30px * 1);
 
     @include respond-to(small) {
-        top: 32px;
+        top: 30px;
+        // right: (30px * 2);
+        // left: (30px * 2);
     }
 
     a {
@@ -45,16 +47,17 @@
 .l-constrained-tight {
     margin-right: auto;
     margin-left: auto;
+    // outline: 1px solid red;
 }
 
 .l-constrained {
-    max-width: 1100px;
-    padding-left: (20px * 2);
-    padding-right: (20px * 2);
-    // position: relative;
+    max-width: 1300px;
+    padding-left: (30px * 1);
+    padding-right: (30px * 1);
+    position: relative;
 }
 
 .l-constrained-tight {
-    // max-width: 1200px;
+    max-width: 940px;
     // width: 65%;
 }

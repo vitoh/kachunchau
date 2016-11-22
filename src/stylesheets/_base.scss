@@ -14,25 +14,22 @@ h6 {
 .giga {
     color: #222;
     font-family: $serif;
-    font-size: 54px;
-    line-height: 1.2;
-    margin-bottom: .4em;
+    font-size: 45px;
+    letter-spacing: -.01em;
+    line-height: 1.25;
+    margin-bottom: .35em;
 
     @include respond-to(small) {
-        font-size: 83px;
-        // font-size: 130px;
-        letter-spacing: -.02em;
-        margin-bottom: .3em;
+        font-size: 68px;
     }
 }
 
 h1,
 .alpha {
     font-size: 24px;
-    line-height: 1.5;
 
     @include respond-to(small) {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
 
@@ -77,7 +74,7 @@ html {
     font-family: $sans-serif;
     font-kerning: normal;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
     text-rendering: optimizeLegibility;
 
     @include respond-to(small) {
