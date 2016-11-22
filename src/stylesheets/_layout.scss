@@ -30,8 +30,6 @@
 
     @include respond-to(small) {
         top: 30px;
-        // right: (30px * 2);
-        // left: (30px * 2);
     }
 
     a {
@@ -47,17 +45,16 @@
 .l-constrained-tight {
     margin-right: auto;
     margin-left: auto;
-    // outline: 1px solid red;
+    // outline: 1px solid black;
 }
 
 .l-constrained {
-    max-width: 1300px;
+    max-width: 1140px;
     padding-left: (30px * 1);
     padding-right: (30px * 1);
     position: relative;
 }
 
 .l-constrained-tight {
-    max-width: 940px;
-    // width: 65%;
+    max-width: 760px;
 }

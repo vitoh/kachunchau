@@ -1,11 +1,13 @@
 .island {
-    padding-top: 32px * 3;
-    padding-bottom: 32px * 3;
-    transition: background .25s ease-out;
+    padding-top: 30px * 3;
+    padding-bottom: 30px * 3;
+    // transition: background .25s ease-out;
 
     @include respond-to(small) {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 30px * 4;
+        // padding-top: 0;
+        padding-bottom: 30px * 4;
+        // padding-bottom: 0;
         overflow: hidden;
     }
 }

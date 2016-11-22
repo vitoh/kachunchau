@@ -13,23 +13,27 @@ h6 {
 
 .giga {
     color: #222;
-    font-family: $serif;
-    font-size: 45px;
-    letter-spacing: -.01em;
+    // font-family: $serif;
+    font-size: 44px;
+    letter-spacing: -.02em;
     line-height: 1.25;
-    margin-bottom: .35em;
+    margin-bottom: .4em;
 
     @include respond-to(small) {
-        font-size: 68px;
+        // font-size: 70px;
+        font-size: 100px;
+        margin-bottom: .2em;
     }
 }
 
 h1,
 .alpha {
-    font-size: 24px;
+    font-size: 23px;
+    line-height: 1.4;
 
     @include respond-to(small) {
         font-size: 30px;
+        line-height: 1.5;
     }
 }
 
