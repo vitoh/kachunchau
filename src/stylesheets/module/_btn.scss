@@ -8,6 +8,7 @@
     text-align: center;
     text-decoration: none;
     &:hover {
+        opacity: 1;
         .btn-arrow {
             max-width: 100px;
             opacity: 1;

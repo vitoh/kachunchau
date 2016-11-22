@@ -1,15 +1,48 @@
 .social {
+    line-height: 1;
     margin-bottom: 0;
     margin-left: auto;
-    line-height: 0;
 
     > li {
         &:not(:last-child) {
-            margin-right: 9px;
+            margin-right: 10px;
 
             @include respond-to(small) {
-                margin-right: 14px;
+                margin-right: 12px;
             }
         }
+    }
+}
+
+.social-text {
+    display: none;
+
+    @include respond-to(small) {
+        display: block;
+        margin-left: 5px;
+    }
+}
+
+
+.yolo {
+    line-height: 24px;
+    padding-left: 28px;
+    position: relative;
+    &:before {
+        content: "👋";
+        font-size: 24px;
+        margin-right: 12px;
+        position: absolute;
+        top: 2px;
+        left: 0;
+
+        @include respond-to(small) {
+            font-size: 32px;
+        }
+    }
+
+    @include respond-to(small) {
+        line-height: 26px;
+        padding-left: 42px;
     }
 }

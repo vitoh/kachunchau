@@ -4,21 +4,19 @@
     background-size: 24px;
     display: inline-block;
     height: 24px;
-    line-height: 0;
+    line-height: 1;
     width: 24px;
 
     @include respond-to(small) {
-        background-size: 28px;
-        height: 28px;
-        width: 28px;
+        background-size: 26px;
+        height: 26px;
+        width: 26px;
     }
 }
 
 
 .i--twitter {
     background-image: url(../images/twitter.svg);
-    &:hover {
-    }
 }
 
 .i--github {

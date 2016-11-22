@@ -23,21 +23,16 @@
 }
 
 .l-header {
-    position: absolute;
-    top: 28px;
-    right: (30px * 1);
-    left: (30px * 1);
+    padding-top: 28px;
+    text-align: center;
 
     @include respond-to(small) {
-        top: 30px;
+        padding-top: 30px;
     }
 
     a {
-        text-align: left;
-    }
-
-    .social {
-        text-align: right;
+        text-decoration: none;
+        // outline: 1px solid red;
     }
 }
 
@@ -45,16 +40,19 @@
 .l-constrained-tight {
     margin-right: auto;
     margin-left: auto;
-    // outline: 1px solid black;
 }
 
 .l-constrained {
-    max-width: 1140px;
-    padding-left: (30px * 1);
-    padding-right: (30px * 1);
-    position: relative;
+    max-width: 1160px;
+    padding-left: (28px * 1);
+    padding-right: (28px * 1);
+
+    @include respond-to(small) {
+        padding-left: (30px * 1);
+        padding-right: (30px * 1);
+    }
 }
 
 .l-constrained-tight {
-    max-width: 760px;
+    max-width: 800px;
 }
