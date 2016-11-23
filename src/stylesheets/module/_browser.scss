@@ -1,8 +1,19 @@
 .browser {
-    background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%) 40px);
     border-radius: 6px 6px 0 0;
     box-shadow: 0 10px 40px rgba(#000, .2);
+}
+
+.browser--primary {
+    background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%) 40px);
     padding-top: 24px;
+}
+
+.browser--secondary {
+    background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%) 20px);
+    padding-top: 18px;
+    &:not(:last-child) {
+        margin-right: 6px;
+    }
 }
 
 .browser-viewport {
@@ -12,5 +23,13 @@
 
     @include respond-to(small) {
         height: 500px;
+    }
+}
+
+.browser-viewport--secondary {
+    height: 270px;
+
+    @include respond-to(small) {
+        height: 420px;
     }
 }
