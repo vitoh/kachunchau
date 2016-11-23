@@ -1,15 +1,16 @@
 .browser {
     border-radius: 6px 6px 0 0;
-    box-shadow: 0 10px 40px rgba(#000, .2);
 }
 
 .browser--primary {
     background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%) 40px);
+    box-shadow: 0 10px 40px rgba(#000, .2);
     padding-top: 24px;
 }
 
 .browser--secondary {
     background-image: linear-gradient(#f5f5f5, darken(#f5f5f5, 15%) 20px);
+    box-shadow: 0 5px 20px rgba(#000, .2);
     padding-top: 18px;
     &:not(:last-child) {
         margin-right: 6px;
