@@ -23,19 +23,11 @@ article {
     }
 }
 
-.work-img {
+.work-block--offset {
     margin-bottom: 30px;
 
     @include respond-to(small) {
         margin-bottom: -120px;
-    }
-}
-
-.work-img--secondary {
-    // margin-bottom: 30px;
-
-    @include respond-to(small) {
-        margin-bottom: 0;
     }
 }
 
