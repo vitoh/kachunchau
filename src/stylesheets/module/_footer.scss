@@ -15,10 +15,10 @@
     }
 
     .small {
-        display: inline-block;
+        display: block;
 
         + .small {
-            margin-left: 20px;
+            margin-top: 1em;
         }
     }
 }
