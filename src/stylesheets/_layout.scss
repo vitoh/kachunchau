@@ -29,11 +29,6 @@
     @include respond-to(small) {
         padding-top: 30px;
     }
-
-    a {
-        text-decoration: none;
-        // outline: 1px solid red;
-    }
 }
 
 .l-constrained,
@@ -54,5 +49,6 @@
 }
 
 .l-constrained-tight {
-    max-width: 870px;
+    max-width: 880px;
+    // outline: 1px solid red;
 }
