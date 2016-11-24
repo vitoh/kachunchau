@@ -33,16 +33,17 @@
         font-size: 24px;
         margin-right: 12px;
         position: absolute;
-        top: 2px;
+        top: 55%;
         left: 0;
+        transform: translateY(-50%);
 
         @include respond-to(small) {
-            font-size: 32px;
+            font-size: 28px;
         }
     }
 
     @include respond-to(small) {
         line-height: 26px;
-        padding-left: 42px;
+        padding-left: 36px;
     }
 }
