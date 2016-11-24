@@ -19,7 +19,7 @@ h6 {
 }
 
 .giga {
-    font-size: 47px;
+    font-size: 45px;
     line-height: 1.35;
     margin-bottom: .4em;
 
@@ -35,7 +35,7 @@ h6 {
     font-size: 30px;
 
     @include respond-to(small) {
-        font-size: 47px;
+        font-size: 45px;
         line-height: 1.35;
         // margin-bottom: 0;
     }
