@@ -90,6 +90,7 @@ html {
     color: darken(#666, 5%);
     // font-family: $serif;
     font-family: $sans-serif;
+    -webkit-font-smoothing: antialiased;
     font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
