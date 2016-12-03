@@ -23,11 +23,18 @@
 }
 
 .l-header {
-    padding-top: 28px;
-    text-align: center;
+    max-width: inherit;
+    position: fixed;
+    top: 27px;
+    // right: 27px;
+    // left: 27px;
+    // width: 100%;
+    z-index: 200;
+
+    width: 95%;
 
     @include respond-to(small) {
-        padding-top: 30px;
+        // padding-top: 27px;
     }
 }
 
@@ -38,16 +45,6 @@
 }
 
 .l-constrained {
-    max-width: 1200px;
-    padding-left: (28px * 1);
-    padding-right: (28px * 1);
-
-    @include respond-to(small) {
-        padding-left: (30px * 1);
-        padding-right: (30px * 1);
-    }
-}
-
-.l-constrained-tight {
-    max-width: 880px;
+    max-width: 1400px;
+    width: 95%;
 }

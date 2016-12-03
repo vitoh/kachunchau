@@ -1,0 +1,94 @@
+.projects {
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex-grow: 1;
+    height: 500px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+
+    @include respond-to(small) {
+        height: 675px;
+        margin-right: 30px;
+        width: calc(50% - 15px);
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        &:hover {
+            .btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: (27px * 1);
+        left: (27px * 1);
+
+        @include respond-to(small) {
+            opacity: 0;
+        }
+    }
+}
+
+.project-card--a {
+    background-color: #00aba2;
+    color: #fff;
+    &:hover {
+        .project-overlay--a {
+            background-color: rgba(#00aba2,.75);
+        }
+    }
+}
+
+.project-card--b {
+    background-color: #bed22f;
+    color: #fff;
+    &:hover {
+        .project-overlay--b {
+            background-color: rgba(#bed22f,.75);
+        }
+    }
+}
+
+.project-card--c {
+    background-color: #b2c5bc;
+    color: #fff;
+    &:hover {
+        .project-overlay--c {
+            background-color: rgba(#b2c5bc,.75);
+        }
+    }
+}
+
+.project-card--d {
+    background-color: #252526;
+    // border: 1px solid #000;
+    color: #fff;
+    padding: (27px * 1);
+
+    @include respond-to(small) {
+        // padding: (27px * 1);
+    }
+}
+
+.project-overlay {
+    padding: (27px * 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .25s ease-out;
+    z-index: 100;
+}
+
+.project-title {
+    // @extend %uppercase;
+
+    font-weight: 700;
+    margin-bottom: 0;
+}

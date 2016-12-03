@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'OfficeCode';
+    font-weight: 300;
+    src:  url(webfonts/OfficeCodeProD-Light.woff2) format(woff2),
+          url(webfonts/OfficeCodeProD-Light.woff) format(woff);
+}
+
 @import
     "normalize";
 
@@ -7,56 +14,47 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $sans-serif;
-    font-weight: 700;
     margin-top: 0;
 }
 
 .giga,
 .mega {
-    color: #222;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .giga {
-    font-size: 45px;
-    line-height: 1.37;
-    margin-bottom: .4em;
+    font-size: 40px;
+    line-height: 1.35;
+    // margin-bottom: 0;
 
     @include respond-to(small) {
-        // font-size: 70px;
-        font-size: 100px;
-        letter-spacing: -.01em;
-        margin-bottom: .2em;
+        font-size: 60px;
     }
 }
 
 .mega {
     font-size: 30px;
+    // margin-bottom: 0;
+    line-height: 1.35;
 
     @include respond-to(small) {
-        font-size: 45px;
-        line-height: 1.37;
+        font-size: 38px;
     }
 }
 
 h1,
 .alpha {
     font-size: 23px;
-    line-height: 1.4;
+    // margin-bottom: 0;
 
     @include respond-to(small) {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
 
 h2,
 .beta {
     font-size: 18px;
-
-    @include respond-to(small) {
-        font-size: 20px;
-    }
 }
 
 h3,
@@ -65,7 +63,6 @@ h3,
 }
 
 p {
-    font-family: $serif;
     margin-top: 0;
     &:last-child {
         margin-bottom: 0;
@@ -87,16 +84,17 @@ body {
 html {
     background-color: #fff;
     box-sizing: border-box;
-    color: darken(#666, 5%);
+    color: #222;
     // font-family: $serif;
     font-family: $sans-serif;
+    // font-family: $monospace;
     -webkit-font-smoothing: antialiased;
     font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
 
     @include respond-to(small) {
-        font-size: 20px;
+        // font-size: 20px;
     }
 }
 
@@ -118,15 +116,19 @@ img {
     vertical-align: middle;
 }
 
+strong {
+    font-weight: 500;
+}
+
 a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
+    // text-decoration: underline;
     text-decoration-skip: ink;
     transition-property: all;
     transition-duration: .25s;
     transition-timing-funtion: ease;
     &:hover {
-        opacity: .5;
         text-decoration: none;
     }
 }

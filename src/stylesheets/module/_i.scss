@@ -8,9 +8,9 @@
     width: 24px;
 
     @include respond-to(small) {
-        background-size: 26px;
-        height: 26px;
-        width: 26px;
+        background-size: (27px * 1);
+        height: (27px * 1);
+        width: (27px * 1);
     }
 }
 

@@ -1,36 +1,31 @@
 .btn {
-    border-radius: 2px;
+    // border-radius: 2px;
+    border-style: solid;
+    border-width: 2px;
     display: inline-block;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1;
-    padding: .6em 1em;
+    padding: .75em 1.5em;
     transition: all .25s ease;
     text-align: center;
     text-decoration: none;
-    &:hover {
-        opacity: 1;
-        .btn-arrow {
-            max-width: 100px;
-            opacity: 1;
-        }
-    }
 }
 
 .btn--primary {
-    background-color: #fff;
+    // background-color: #fff;
     border-color: #fff;
     color: #222;
 }
 
 .btn--secondary {
-    background-color: #222;
-    border-color: #222;
+    // background-color: #222;
+    border-color: #fff;
     color: #fff;
 }
 
 .btn-arrow {
     display: inline-block;
-    max-width: 0;
-    opacity: 0;
+    // max-width: 0;
+    // opacity: 0;
     transition: all .25s ease;
 }

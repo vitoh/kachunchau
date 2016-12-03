@@ -1,10 +1,10 @@
 .island {
-    padding-top: 30px * 3;
-    padding-bottom: 30px * 3;
+    // border-radius: 4px;
+    height: 700px;
+    // padding: (30px * 2) 0 (30px * 2) (30px * 2);
 
     @include respond-to(small) {
-        padding-top: 30px * 4;
-        padding-bottom: 30px * 4;
+        // padding: 30px * 3;
         overflow: hidden;
     }
 }

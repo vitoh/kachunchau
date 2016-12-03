@@ -1,26 +1,28 @@
-.hero {
-    text-align: center;
-
-    a {
-        color: #222;
-    }
-}
-
 .hero-unit {
-    padding-top: 30px * 4;
-    padding-bottom: 30px * 4;
+    padding-top: (27px * 5);
+    padding-bottom: (27px * 4);
+    // text-align: center;
+
+    p {
+        // font-weight: 300 !important;
+    }
 
     @include respond-to(small) {
-        padding-top: 30px * 7;
-        padding-bottom: 30px * 7;
-        // width: 75%;
+        // margin-right: auto;
+        // margin-left: auto;
+        padding-top: (27px * 7);
+        // padding-bottom: (27px * 5);
+        width: 50%;
     }
 }
 
 .hero-tagline  {
-    padding-bottom: 28px;
+    @extend %uppercase;
+
+    font-size: 12px;
+    // padding-bottom: 27px;
 
     @include respond-to(small) {
-        padding-bottom: 32px;
+        // padding-bottom: 32px;
     }
 }

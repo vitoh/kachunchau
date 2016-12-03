@@ -16,34 +16,13 @@
 
 .social-text {
     display: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 
     @include respond-to(small) {
-        display: block;
+        // display: block;
         margin-left: 10px;
-    }
-}
-
-
-.yolo {
-    line-height: 24px;
-    padding-left: 28px;
-    position: relative;
-    &:before {
-        content: "👋";
-        font-size: 24px;
-        margin-right: 12px;
-        position: absolute;
-        top: 55%;
-        left: 0;
-        transform: translateY(-50%);
-
-        @include respond-to(small) {
-            font-size: 28px;
-        }
-    }
-
-    @include respond-to(small) {
-        line-height: 26px;
-        padding-left: 36px;
     }
 }
