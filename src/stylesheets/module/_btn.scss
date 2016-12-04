@@ -1,14 +1,16 @@
 .btn {
-    // border-radius: 2px;
     border-style: solid;
     border-width: 2px;
     display: inline-block;
     font-weight: 400;
     line-height: 1;
     padding: .75em 1.5em;
-    transition: all .25s ease;
     text-align: center;
     text-decoration: none;
+    &:hover {
+        background-color: #fff;
+        color: #222;
+    }
 }
 
 .btn--primary {
