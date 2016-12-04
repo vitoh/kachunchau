@@ -16,7 +16,6 @@
     position: relative;
 
     @include respond-to(small) {
-        // height: 550px;
         // height: 55vh;
         height: 550px;
         width: calc(25% - 6px);
@@ -26,6 +25,7 @@
         &:hover {
             .btn {
                 opacity: 1;
+                transform: translateY(0) scale(1);
             }
         }
     }
@@ -38,6 +38,7 @@
 
         @include respond-to(small) {
             opacity: 0;
+            transform: translateY(-18px) scale(.95);
         }
     }
 }
