@@ -32,8 +32,9 @@
 
     .btn {
         position: absolute;
-        bottom: (27px * 1);
-        left: (27px * 1);
+        right: (27px * .75);
+        bottom: (27px * .75);
+        left: (27px * .75);
 
         @include respond-to(small) {
             opacity: 0;
