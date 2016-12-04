@@ -4,7 +4,7 @@
     box-shadow: 0 10px 30px rgba(#000,.2);
     margin-right: 5%;
     margin-left: 5%;
-    padding-top: 24px;
+    padding-top: 20px;
     position: relative;
     top: (27px * 3.5);
 
@@ -38,26 +38,26 @@
 
 .browser-dots {
     background-color: #fff;
-    border-radius: 9px;
-    height: 9px;
+    border-radius: 7px;
+    height: 7px;
     position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 9px;
+    top: 7px;
+    left: 7px;
+    width: 7px;
     &:before,
     &:after {
         background-color: #fff;
-        border-radius: 9px;
+        border-radius: 7px;
         display: block;
         content: "";
-        height: 9px;
+        height: 7px;
         position: absolute;
-        width: 9px;
+        width: 7px;
     }
     &:before {
-        margin-left: 15px;
+        margin-left: 11px;
     }
     &:after {
-        margin-left: 30px;
+        margin-left: 22px;
     }
 }
