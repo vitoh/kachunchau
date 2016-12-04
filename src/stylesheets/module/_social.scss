@@ -26,3 +26,10 @@
         margin-left: 10px;
     }
 }
+
+.yolo {
+    @extend %uppercase;
+
+    color: #222;
+    font-weight: 700;
+}

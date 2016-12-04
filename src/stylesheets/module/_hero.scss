@@ -1,28 +1,48 @@
 .hero-unit {
     padding-top: (27px * 5);
     padding-bottom: (27px * 4);
-    // text-align: center;
-
-    p {
-        // font-weight: 300 !important;
-    }
 
     @include respond-to(small) {
-        // margin-right: auto;
-        // margin-left: auto;
-        padding-top: (27px * 7);
-        // padding-bottom: (27px * 5);
+        padding-top: (27px * 7.5);
         width: 50%;
+    }
+
+    a {
+        display: inline-block;
+        // outline: 1px solid red;
+        position: relative;
+        text-decoration: underline;
+        transition: all .25s ease;
+        // &:before {
+        //     background: linear-gradient(90deg, #00ff66, #222);
+        //     background-size: 400%;
+        //     content: "";
+        //     display: inline-block;
+        //     height: 10px;
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 0;
+        //     width: 100%;
+        // }
+        // &:hover {
+        //     &:before {
+        //          animation: test 0 ease infinite;
+        //         // background: linear-gradient(90deg, #222, #00ff66);
+        //     }
+        // }
     }
 }
 
-.hero-tagline  {
-    @extend %uppercase;
+@keyframes test {
+    0% {
+        background-position: 0 50%;
+    }
 
-    font-size: 12px;
-    // padding-bottom: 27px;
+    50% {
+        background-position: 100% 50%;
+    }
 
-    @include respond-to(small) {
-        // padding-bottom: 32px;
+    100% {
+        background-position: 0 50%;
     }
 }
