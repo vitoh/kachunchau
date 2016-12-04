@@ -20,13 +20,12 @@ h6 {
 .giga,
 .mega {
     color: #222;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .giga {
     font-size: 40px;
     line-height: 1.35;
-    // margin-bottom: 0;
 
     @include respond-to(small) {
         font-size: 60px;
@@ -35,11 +34,10 @@ h6 {
 
 .mega {
     font-size: 30px;
-    // margin-bottom: 0;
     line-height: 1.35;
 
     @include respond-to(small) {
-        font-size: 38px;
+        font-size: 40px;
     }
 }
 
