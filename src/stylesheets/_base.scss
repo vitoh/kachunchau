@@ -44,7 +44,6 @@ h6 {
 h1,
 .alpha {
     font-size: 23px;
-    // margin-bottom: 0;
 
     @include respond-to(small) {
         font-size: 30px;
@@ -53,17 +52,17 @@ h1,
 
 h2,
 .beta {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h3,
 .gamma {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 h4,
 .delta {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 p {
@@ -122,11 +121,12 @@ img {
 
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     transition-property: all;
     transition-duration: .25s;
     transition-timing-funtion: ease-in-out;
     &:hover {
-        text-decoration: none;
+        color: #11bb92;
+        // text-decoration: none;
     }
 }

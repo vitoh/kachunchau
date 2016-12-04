@@ -82,8 +82,12 @@
 }
 
 .project-title {
-    // @extend %uppercase;
-
-    font-weight: 700;
     margin-bottom: 0;
+
+    a {
+        text-decoration: none;
+        &:hover {
+            color: inherit;
+        }
+    }
 }
