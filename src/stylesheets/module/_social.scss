@@ -15,11 +15,11 @@
 }
 
 .social-text {
-    @extend %uppercase;
+    // @extend %uppercase;
 
     display: none;
-    font-size: 14px;
-    font-weight: 700;
+    // font-size: 14px;
+    // font-weight: 700;
 
     @include respond-to(small) {
         // display: block;
