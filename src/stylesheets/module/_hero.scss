@@ -1,14 +1,14 @@
 .hero-unit {
-    padding-top: (27px * 5);
-    padding-bottom: (27px * 4);
+    padding-top: (27px * 6);
+    padding-bottom: (27px * 3);
 
     @include respond-to(small) {
         padding-top: (27px * 7.5);
+        padding-bottom: (27px * 4);
         width: 50%;
     }
 
     a {
         text-decoration: underline;
-
     }
 }

@@ -28,23 +28,21 @@
     top: 27px;
     // right: 27px;
     // left: 27px;
-    // width: 100%;
+    width: 90%;
     z-index: 200;
 
-    width: 95%;
-
     @include respond-to(small) {
-        // padding-top: 27px;
+        width: 95%;
     }
 }
 
-.l-constrained,
-.l-constrained-tight {
+.l-constrained {
     margin-right: auto;
     margin-left: auto;
-}
-
-.l-constrained {
     max-width: 1400px;
-    width: 95%;
+    width: 90%;
+
+    @include respond-to(small) {
+        width: 95%;
+    }
 }

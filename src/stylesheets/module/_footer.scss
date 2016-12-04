@@ -1,20 +1,17 @@
 .footer {
-    border-top: 1px solid #f5f5f5;
-    margin-top: (27px * 2);
-    padding-top: (27px * 2);
-    padding-bottom: (27px * 2);
-    text-align: center;
+    padding-top: (27px * 1.5);
+    padding-bottom: (27px * 1.5);
+    // text-align: center;
 
     @include respond-to(small) {
-        padding-top: (30px * 2);
-        padding-bottom: (30px * 2);
+        border-top: 1px solid #f5f5f5;
+        margin-top: (27px * 2);
+        padding-top: (27px * 2);
+        padding-bottom: (27px * 2);
     }
 
-    .small {
+    small {
+        color: #b0abab;
         display: block;
-
-        + .small {
-            margin-top: 1em;
-        }
     }
 }

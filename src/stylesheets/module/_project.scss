@@ -1,20 +1,25 @@
 .projects {
     flex-wrap: wrap;
+    margin-right: -5%;
+    margin-left: -5%;
+
+    @include respond-to(small) {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 .project-card {
     flex-grow: 1;
-    height: 500px;
-    margin-bottom: 30px;
+    height: 600px;
     overflow: hidden;
     position: relative;
 
     @include respond-to(small) {
-        height: 675px;
-        margin-right: 30px;
-        width: calc(50% - 15px);
-        &:nth-child(2n) {
-            margin-right: 0;
+        height: 550px;
+        width: calc(25% - 6px);
+        &:not(:last-child) {
+            margin-right: 2px;
         }
         &:hover {
             .btn {
@@ -67,11 +72,11 @@
 .project-card--d {
     background-color: #252526;
     color: #fff;
-    padding: (27px * 1);
+    padding: (27px * .75);
 }
 
 .project-overlay {
-    padding: (27px * 1);
+    padding: (27px * .75);
     position: absolute;
     top: 0;
     right: 0;
