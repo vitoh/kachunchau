@@ -8,9 +8,9 @@
     }
 
     a {
-        // color: #00c9ff;
         text-decoration: underline;
-        text-decoration-color: #1197bb;
-        transition: all .25s ease;
+        &:hover {
+            color: #11bb92;
+        }
     }
 }
