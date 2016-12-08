@@ -4,7 +4,6 @@
 
 .project-card {
     flex-grow: 1;
-    height: 600px;
     overflow: hidden;
     position: relative;
     &:hover {
@@ -21,8 +20,6 @@
     }
 
     @include respond-to(small) {
-        // height: 55vh;
-        height: 600px;
         width: calc(33.333%);
         // width: calc(25% - 3px);
         &:not(:last-child) {
@@ -47,6 +44,17 @@
             opacity: 0;
             transform: translateY(-18px) scale(.95);
         }
+    }
+}
+
+
+.project-card--a,
+.project-card--b,
+.project-card--c {
+    height: 650px;
+
+    @include respond-to(small) {
+        height: 675px;
     }
 }
 
@@ -83,6 +91,11 @@
 .project-card--d {
     background-color: #252526;
     color: #fff;
+    height: 650px;
+
+    @include respond-to(small) {
+        height: 775px;
+    }
 }
 
 .project-header {
