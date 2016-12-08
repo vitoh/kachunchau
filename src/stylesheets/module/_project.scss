@@ -23,9 +23,10 @@
     @include respond-to(small) {
         // height: 55vh;
         height: 600px;
-        width: calc(25% - 3px);
+        width: calc(33.333%);
+        // width: calc(25% - 3px);
         &:not(:last-child) {
-            margin-right: 1px;
+            // margin-right: 1px;
         }
         &:hover {
             .btn {

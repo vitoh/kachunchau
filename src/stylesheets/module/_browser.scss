@@ -23,9 +23,16 @@
 }
 
 .browser-grid {
+    justify-content: center;
     height: 75%;
     padding-right: (27px * .75);
     padding-left: (27px * .75);
+
+    @include respond-to(small) {
+        height: auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .browser-secondary {
@@ -33,7 +40,7 @@
     border-radius: 3px;
     box-shadow: 0 5px 10px rgba(#000,.5);
     &:not(:last-child) {
-        margin-right: 3px;
+        margin-right: 5px;
     }
 
     img {
