@@ -43,7 +43,7 @@ h6 {
 
 h1,
 .alpha {
-    font-size: 22px;
+    font-size: 20px;
 
     @include respond-to(small) {
         font-size: 30px;
@@ -92,12 +92,11 @@ html {
     font-family: $sans-serif;
     // font-family: $monospace;
     -webkit-font-smoothing: antialiased;
-    font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
 
     @include respond-to(small) {
-        // font-size: 20px;
+        font-size: 18px;
     }
 }
 
