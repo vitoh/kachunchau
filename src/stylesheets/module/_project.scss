@@ -1,12 +1,5 @@
 .projects {
     flex-wrap: wrap;
-    margin-right: -5%;
-    margin-left: -5%;
-
-    @include respond-to(small) {
-        margin-right: 0;
-        margin-left: 0;
-    }
 }
 
 .project-card {
@@ -18,9 +11,9 @@
     @include respond-to(small) {
         // height: 55vh;
         height: 550px;
-        width: calc(25% - 6px);
+        width: calc(25% - 3px);
         &:not(:last-child) {
-            margin-right: 2px;
+            margin-right: 1px;
         }
         &:hover {
             .btn {
@@ -80,7 +73,7 @@
 }
 
 .project-overlay {
-    padding: (27px * .75);
+    padding: 5%;
     position: absolute;
     top: 0;
     right: 0;
@@ -88,6 +81,10 @@
     left: 0;
     transition: all .25s ease-out;
     z-index: 100;
+
+    @include respond-to(small) {
+        padding: (27px * .75);
+    }
 }
 
 .project-title {
