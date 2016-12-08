@@ -23,7 +23,7 @@
 }
 
 .browser-grid {
-    // height: 100%;
+    height: 75%;
     padding-right: (27px * .75);
     padding-left: (27px * .75);
 }
@@ -33,7 +33,7 @@
     border-radius: 3px;
     box-shadow: 0 5px 10px rgba(#000,.5);
     &:not(:last-child) {
-        margin-right: 5px;
+        margin-right: 3px;
     }
 
     img {
