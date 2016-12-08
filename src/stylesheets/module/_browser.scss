@@ -6,12 +6,10 @@
     margin-left: 5%;
     padding-top: 20px;
     position: relative;
-    // top: (27px * 0);
 
     @include respond-to(small) {
         margin-right: 0;
         margin-left: 0;
-        // top: (27px * 3.5);
         left: (27px * .75);
     }
 
@@ -22,6 +20,12 @@
             max-width: 500px;
         }
     }
+}
+
+.browser-grid {
+    // height: 100%;
+    padding-right: (27px * .75);
+    padding-left: (27px * .75);
 }
 
 .browser-secondary {
