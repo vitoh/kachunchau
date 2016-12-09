@@ -20,11 +20,6 @@
     }
 
     @include respond-to(small) {
-        width: calc(33.333%);
-        // width: calc(25% - 3px);
-        &:not(:last-child) {
-            // margin-right: 1px;
-        }
         &:hover {
             .btn {
                 opacity: 1;
@@ -50,7 +45,6 @@
     }
 }
 
-
 .project-card--a,
 .project-card--b,
 .project-card--c {
@@ -58,6 +52,13 @@
 
     @include respond-to(small) {
         height: 675px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: calc((100% / 3) - 10px);
+        // &:not(:last-child) {
+        //     margin-right: 10px;
+        //     // margin-right: 1px;
+        // }
     }
 }
 
@@ -84,6 +85,8 @@
 .project-card--c {
     background-color: #b2c5bc;
     color: #fff;
+    margin-right: 0;
+    // right: 0;
     &:hover {
         &:before {
             background-color: rgba(#b2c5bc,.75);
